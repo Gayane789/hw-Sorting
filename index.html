@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+</head>
+<style>
+    body {
+        margin: 20px;
+        background-color: lightcyan;
+    }
+</style>
+<body>
+
+    <label for="text-input">Enter numbers (separated by commas):</label>
+    <input style="width: 300px;" type="text" id="text-input">
+    <button onclick="handleSortText(calculateBubble)" type="button" id="bubble-sort-button">Bubble Sort</button>
+    <button onclick="handleSortText(calculateSelection)" type="button" id="selection-sort-button">Selection Sort</button>
+    <button onclick="handleSortText(calculateInsertion)" type="button" id="insertion-sort-button">Insertion Sort</button>
+    <button onclick="handleSortText(calculateMerge)" type="button" id="merge-sort-button">Merge Sort</button>
+    <button onclick="handleClearText()" type="button">Clear</button>
+
+    <div style="width: 1030px; height: 30px; background-color: white;" id="result-display"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
